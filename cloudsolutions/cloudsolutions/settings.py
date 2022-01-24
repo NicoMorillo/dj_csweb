@@ -78,7 +78,7 @@ WSGI_APPLICATION = 'cloudsolutions.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'CloudSolution.db',
+        'NAME': 'db.CloudSolution',
     }
 }
 
