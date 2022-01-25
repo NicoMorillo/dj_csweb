@@ -1,5 +1,5 @@
 from django.db import models
-from request import Company
+from app.request.models import Company
 # Create your models here.
 
 class Platform(models.Model):
@@ -12,5 +12,5 @@ class Service(models.Model):
     cost_aprox = models.IntegerField()
     model = models.CharField(max_length=15)
     date_origin = models.DateField()
-    request = models.ForeignKey(Company, null=True, blank=True, on_delete = models.CASCADA)
+    company = models.ForeignKey(Company, null=True, blank=True, on_delete = models.CASCADA)
     platform = models.ManyToManyField(Platform)
