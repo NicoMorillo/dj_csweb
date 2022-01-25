@@ -8,7 +8,6 @@ class Platform(models.Model):
 class Service(models.Model):
     
     name = models.CharField(max_length=50)
-    platform = models.CharField(max_length=20)
     cost_aprox = models.IntegerField()
     model = models.CharField(max_length=15)
     date_origin = models.DateField()
