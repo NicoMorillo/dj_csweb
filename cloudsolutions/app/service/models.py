@@ -12,5 +12,5 @@ class Service(models.Model):
     cost_aprox = models.IntegerField()
     model = models.CharField(max_length=15)
     date_origin = models.DateField()
-    company = models.ForeignKey(Company, null=True, blank=True, on_delete = models.CASCADA)
+    company = models.ForeignKey(Company, null=True, blank=True, on_delete = models.CASCADE)
     platform = models.ManyToManyField(Platform)
